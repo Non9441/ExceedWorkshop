@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src = "index.js"></script>
+    <style>
+      .house{
+        padding-top: 180;
+      }
+      #status{
+        padding-left: 130;
+      }
+      #blank{
+        height: 80;
+      }
+      /*#light{
+        position: absolute;
+        padding-top: 369px;
+      }*/
+      #head{
+        font-family: fantasy;
+
+      }
+      #button{
+        position: absolute;
+        margin: auto;
+        top: 368;
+        left: 490;
+        right: 0;
+        bottom: 0;
+        /*padding-top: 360;*/
+      }
+      #bot{
+        font-family:sans-serif;
+        background-color: rgb(107, 203, 250);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="groupName" style="text-align: center">
+        <h1>CEEDney's SmartHome</h1>
+    </div>
+    <div id="btton" class="btn-group" style="text-align: center" role="group" aria-label="...">
+        <button id="light" type="button" class="btn btn-default"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>Light</button>
+        <button id="air" type="button" class="btn btn-default">Air condition</button>
+        <button id="door" type="button" class="btn btn-default">Door</button>
+    </div> -->
+    <div class = "row" style = "background-color:rgba(61, 146, 187, 0.67)">
+      <center>
+        <h1 id = "head">CEEDney's Smarthouse</h1>
+      </center>
+    </div>
+    <div class = "row">
+      <div class = "col-md-4">
+
+      </div>
+      <div id = "button">
+        <button><img src="but1.jpg" id="light" width="95"></button>
+        <!-- <div class = "col-md-1">
+
+        </div> -->
+        <button><img src="but2.jpg" id="air" width="95"></button>
+      </div>
+
+
+
+      <div class = "house">
+        <center>
+          <img src = "house.jpg"/>
+        </center>
+        <br />
+      </div>
+
+    </div>
+
+    <div class = "row" id ="bot">
+      <!-- <div class = "col-md" id = "status">
+        <div id="btton" class="btn-group" style="text-align: center" role="group" aria-label="...">
+        <button id="light" type="button" class="btn btn-default"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>Light</button>
+        <button id="air" type="button" class="btn btn-default">Air condition</button>
+        <button id="door" type="button" class="btn btn-default">Door</button>
+      </div> -->
+      <div class="col-md-4" style="text-align: right">
+          <h3><span class="label label-default"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> X <textfield id="num"></textfield></span>
+        </h3>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+            <h3 class= "test">Temperature  <span class="label label-default"><textfield id="temp"></textfield>°C</span>
+      </div>
+      <div class="col-md-4" style="text-align: left">
+          <h3>Light intensity  <span class="label label-default"><textfield id="inten" ></textfield></span></h3>
+      </div>
+      <div>
+        <div class="col-md-4" style="text-align:right">
+          <h3>Light  <span class="label label-default"><textfield id="light2" > </textfield></span></h3>
+      </div>
+      <div class="col-md-3" style="text-align:center">
+          <h3>Air Condition  <span class="label label-default"><textfield id="air2"></textfield></span>
+      </div>
+      <div class="col-md-4" style="text-align: left">
+          <h3>Door   <span class="label label-default"><textfield id="door2" ></textfield></span></h3>
+      </div>
+    </div>
+
+      <!-- <h3><span class="label label-default"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> X <textfield id="num">0</textfield></span>
+      </h3>
+      <div class= "test">Temperature <span class="label label-default"><textfield id="temp"></textfield>°C</span>
+      </div> -->
+    </div>
+
+  </body>
+</html>
